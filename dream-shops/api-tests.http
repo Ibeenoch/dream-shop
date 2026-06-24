@@ -1,0 +1,116 @@
+POST http://localhost:9193/api/v1/images/upload?productId=8
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="files"; filename="electronics.jpg"
+Content-Type: image/jpeg
+
+< C:\Users\hp\Pictures\electronics.jpg
+--WebAppBoundary--
+
+
+###
+GET http://localhost:9193/api/v1/products/all
+
+###
+GET http://localhost:9193/api/v1/images/image/download1
+
+###
+POST http://localhost:9193/api/v1/images/upload?productId=7
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="files"; filename="dell_inspiron_1.webp"
+Content-Type: image/webp
+
+< C:\Users\hp\Pictures\dell_inspiron_1.webp
+
+--WebAppBoundary
+Content-Disposition: form-data; name="files"; filename="Dell-Inspiron-2.jpg"
+Content-Type: image/jpg
+
+< C:\Users\hp\Pictures\Dell-Inspiron-2.jpg
+
+--WebAppBoundary--
+
+
+###
+GET http://localhost:9193/api/v1/images/image/download/5
+
+###
+
+### Add to cart
+POST http://localhost:9193/api/v1/cartItems/item/add?productId=7&quantity=5
+###
+
+
+### Create User
+POST http://localhost:9193/api/v1/users/create
+Content-Type: application/json
+
+{
+  "firstName": "sam",
+  "lastName": "dee",
+  "email": "samdee@example.com",
+  "password": "password123"
+}
+
+###
+
+### create product
+POST http://localhost:9193/api/v1/products/add
+Content-Type: application/json
+
+{
+  "name": "Watch",
+  "brand": "Apple",
+  "price": 200.00,
+  "inventory": 5,
+  "description": "Apple smart Watch",
+  "category": "Electronic"
+}
+###
+
+### Get User By ID
+GET http://localhost:9193/api/v1/users/1/user
+
+###
+
+### place order
+POST http://localhost:9193/api/v1/orders/order?userId=1
+###
+
+
+### Update User
+PUT http://localhost:9193/api/v1/users/1/update
+Content-Type: application/json
+
+{
+  "firstName": "sam Updated",
+  "lastName": "dee",
+  "email": "sam.updated@example.com"
+}
+
+###
+
+### Delete User
+DELETE http://localhost:9193/api/v1/users/1/delete
+
+###
+
+
+### create user
+POST http://localhost:9193/api/v1/users/create
+Content-Type: application/json
+
+{
+  "firstName": "ade",
+  "lastName": "wale",
+  "email": "adewale@gmail.com",
+  "roles": [
+    {
+      "name": "USER"
+    }
+  ]
+}
+###

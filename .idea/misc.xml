@@ -5,4 +5,7 @@
     <file type="web" url="file://$PROJECT_DIR$/dream-shops" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
 </project>

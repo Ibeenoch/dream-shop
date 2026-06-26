@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4e6cfefd-bbf4-4b8c-b130-a8ba446f4d98" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dream-shops/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dream-shops/src/main/java/com/dailycodework/dreamshops/config/DotenvConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dream-shops/src/main/java/com/dailycodework/dreamshops/config/OpenApiConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dream-shops/src/main/java/com/dailycodework/dreamshops/exceptions/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dream-shops/src/main/java/com/dailycodework/dreamshops/repository/RoleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dream-shops/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/dream-shops/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dream-shops/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/dream-shops/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dream-shops/src/main/java/com/dailycodework/dreamshops/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dream-shops/src/main/java/com/dailycodework/dreamshops/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dream-shops/src/main/java/com/dailycodework/dreamshops/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dream-shops/src/main/java/com/dailycodework/dreamshops/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dream-shops/src/main/java/com/dailycodework/dreamshops/request/CreateUserRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dream-shops/src/main/java/com/dailycodework/dreamshops/request/CreateUserRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dream-shops/src/main/java/com/dailycodework/dreamshops/security/jwt/AuthTokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/dream-shops/src/main/java/com/dailycodework/dreamshops/security/jwt/AuthTokenFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dream-shops/src/main/java/com/dailycodework/dreamshops/service/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/dream-shops/src/main/java/com/dailycodework/dreamshops/service/user/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dream-shops/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dream-shops/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/dream-shops">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="dream-shops" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="3FggatK44WCiR0J8XXAT425n9UI" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build dream-shops.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Spring Boot.DreamShopsApplication.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hp\Desktop\java-project\dream-shops\dream-shops" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="DreamShopsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="com.dailycodework.dream-shops.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dailycodework.dreamshops.DreamShopsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.24374.151" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.24374.151" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4e6cfefd-bbf4-4b8c-b130-a8ba446f4d98" name="Changes" comment="" />
+      <created>1782502194015</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1782502194015</updated>
+      <workItem from="1782502196335" duration="1325000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

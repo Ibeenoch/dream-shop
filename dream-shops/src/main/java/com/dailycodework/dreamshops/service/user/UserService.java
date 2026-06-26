@@ -4,7 +4,9 @@ import com.dailycodework.dreamshops.dto.UserDto;
 import com.dailycodework.dreamshops.exceptions.AlreadyExistsException;
 import com.dailycodework.dreamshops.exceptions.ResourceNotFoundException;
 
+import com.dailycodework.dreamshops.model.Role;
 import com.dailycodework.dreamshops.model.User;
+import com.dailycodework.dreamshops.repository.RoleRepository;
 import com.dailycodework.dreamshops.repository.UserRepository;
 import com.dailycodework.dreamshops.request.CreateUserRequest;
 import com.dailycodework.dreamshops.request.UserUpdateRequest;
@@ -22,7 +24,8 @@ import java.util.Optional;
 public class UserService implements IUserService{
     private final UserRepository userRepository;
     private final ModelMapper modelMapper;
-    private PasswordEncoder passwordEncoder;
+    private final PasswordEncoder passwordEncoder;
+    private final RoleRepository roleRepository;
 
     @Override
     public User getUserById(Long userId) {
@@ -31,11 +34,18 @@ public class UserService implements IUserService{
 
     @Override
     public User createUser(CreateUserRequest request) {
+        //check if user already exist
+        if(userRepository.existsByEmail(request.getEmail())){
+            throw new AlreadyExistsException("user already exist");
+        }
+
+        Role role = roleRepository.findByName(request.getRole()).orElseThrow(() -> new ResourceNotFoundException("Role not found"));
         return Optional.of(request)
                 .filter(user -> !userRepository.existsByEmail(request.getEmail()))
                 .map(req -> {
                     User user = new User();
                     user.setFirstName(request.getFirstName());
+                    user.getRoles().add(role);
                     user.setLastName(request.getLastName());
                     user.setEmail(request.getEmail());
                     user.setPassword(passwordEncoder.encode(request.getPassword()));
